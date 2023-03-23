@@ -12,7 +12,7 @@ buttonStart.addEventListener('click', changeColor);
 buttonStop.addEventListener('click', stopChangeColor);
 
 function changeColor() {
-    // body.style.backgroundColor = getRandomHexColor();
+    body.style.backgroundColor = getRandomHexColor();
     timerId = setInterval(() => {
         body.style.backgroundColor = getRandomHexColor();
     }, 1000);
@@ -28,4 +28,4 @@ function stopChangeColor() {
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
-}
+};
